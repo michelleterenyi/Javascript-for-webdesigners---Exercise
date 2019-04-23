@@ -5,8 +5,15 @@ document.getElementById('cart-hplus').addEventListener('submit', estimateTotal);
 
 function estimateTotal(event) {
 	event.preventDefault();
+
+	var state = document.getElementById('s-state')
 	
-	console.log('You submitted the form.');
+	if (state.value === '') {
+		alert('Please choose your shipping state!');
+
+		document.getElementById('s-state')
+		state.focus();
+	}
 }
 
 })();
