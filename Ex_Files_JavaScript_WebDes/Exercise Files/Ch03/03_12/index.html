@@ -149,13 +149,21 @@
         
                     <div class="info">
                     <span>Price: $30/bottle</span>
-                    </div>
+					</div>
+					
+				<div class="item">
+					<h2>H+ Mineral Water</h2>
+					<p>New mineral water!</p>
+
+					<div class="info">
+					<span>Price $4/bottle</span>
+					</div>
+					
+					<div class="order">
+						<label for="txt-q-mineral">Quantity desired:</label>
+						<input type="number" min="0" id="txt-q-mineral" size="3" placeholder="0">
+				</div>
         
-                    <div class="order">
-                    <label for="txt-q-power">Quantity desired:</label>
-                    <input type="number" min="0" id="txt-q-power" size="3" placeholder="0">
-                    </div>
-                </div>
     
                 <div id="summary">
                     <h2>Estimate Order</h2>
@@ -165,7 +173,8 @@
                         <select id="s-state" required>
                             <option value="">- select -</option>
                             <option value="CA">California (7.5% tax)</option>
-                            <option value="IL">Illinois</option>
+							<option value="IL">Illinois</option>
+							<option value="IL">Washington (6.5% tax)</option>
                             <option value="NH">New Hampshire</option>
                             <option value="PA">Pennsylvania</option>
                         </select>
